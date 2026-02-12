@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- BACKGROUND ANIMATION -->
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"> <span> </span></a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1 class="hidden">Hi, I'm <span class="highlight">Aditya</span></h1>
+            <p class="subtitle hidden">Building Intelligence with Data | AI & ML Enthusiast</p>
+            <p class="description hidden">
+                Hi, I’m Aditya Jayram Purkar — a Big Data Analytics professional passionate about building AI-powered,
+                ML-driven data solutions. I work with Data Analytics, Machine Learning, Big Data, and Cloud
+                technologies to turn raw data into actionable insights and intelligent decision-making.
+
+                💡 Let’s build the future with AI, ML, and Data.
+            </p>
+            <div class="cta-buttons hidden">
+                <a href="projects.html" class="btn">View Projects</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <style>
+        /* Hero Specific Styles */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* background removed */
+            padding: 120px 20px;
+            /* Offset for fixed navbar + breathing room */
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            /* Increased margin */
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            text-shadow: 0 0 20px var(--accent-glow);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: var(--secondary-accent);
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            max-width: 900px;
+            /* Increased width */
+            margin: 0 auto 40px;
+            color: var(--text-secondary);
+            white-space: pre-line;
+            /* Respects user's line breaks */
+            line-height: 1.8;
+            text-align: justify;
+            /* Better for long text blocks */
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* Buttons stack on very small screens */
+        }
+
+        .btn-secondary {
+            border-color: var(--text-primary);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary::before {
+            background: var(--text-primary);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .description {
+                text-align: left;
+                /* Easier to read on mobile */
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

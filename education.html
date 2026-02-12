@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- BACKGROUND ANIMATION -->
+    <div class="animated-bg"></div>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"> <span> </span></a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="education.html" class="active">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-section">
+        <div class="container">
+            <h2 class="section-title hidden">Education</h2>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item hidden">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2025(Aug) - 2026(Feb)</span>
+                        <h3>Post Graduate Diploma in Big Data Analytics</h3>
+                        <h4>CDAC</h4>
+                        <p>Percentage: 71.88%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item hidden">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2023 - 2025</span>
+                        <h3>Master of Computer Applications</h3>
+                        <h4>Sinhgad Institute of Management, Pune</h4>
+                        <p>Percentage: 82.98%</p>
+                    </div>
+                </div>
+
+
+                <div class="timeline-item hidden">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2020 - 2023</span>
+                        <h3>Bachelor of Computer Science</h3>
+                        <h4>K K Wagh Arts, Commerce, Science and Computer Science College, Nashik</h4>
+                        <p>Percentage: 77.59%</p>
+                    </div>
+                </div>
+
+
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item hidden">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2019 - 2020</span>
+                        <h3>Higher Secondary Education</h3>
+                        <h4>Progressive Arts, Commerce, Science College, Nashik</h4>
+                        <p>Science stream.</p>
+                        <p>Percentage: 60%</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item hidden">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2017 - 2018</span>
+                        <h3>Secondary Education</h3>
+                        <h4>ST.Peter's English Medium School,Nashik</h4>
+                        <p>Percentage: 75.80%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aditya. All Rights Reserved.</p>
+    </footer>
+
+    <style>
+        .page-section {
+            padding: 120px 0 60px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+            width: 100%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+            /* text-align: left; Removed to enforce center */
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: auto;
+            /* text-align: right; Removed to enforce center */
+        }
+
+        /* Adjust for even items to pull left */
+        .timeline-item:nth-child(even) {
+            display: flex;
+            justify-content: flex-end;
+            /* This was tricky, actually we control content width */
+        }
+
+        /* Simpler approach for centered line */
+        .timeline-item {
+            display: flex;
+            justify-content: center;
+        }
+
+        .timeline-content {
+            width: 45%;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+            transition: transform 0.3s;
+            text-align: center;
+            /* Centered content */
+        }
+
+        .timeline-item:nth-child(odd) {
+            justify-content: flex-start;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-end;
+        }
+
+        .timeline-item:hover .timeline-content {
+            border-color: var(--accent-color);
+            transform: scale(1.02);
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            top: 25px;
+            width: 16px;
+            height: 16px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 0 10px var(--accent-color);
+            z-index: 10;
+        }
+
+        .date {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--secondary-accent);
+            margin-bottom: 10px;
+        }
+
+        .timeline-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+            color: var(--text-primary);
+        }
+
+        .timeline-content h4 {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+
+            .timeline-content {
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
+                text-align: center !important;
+                /* Changed to center */
+            }
+
+            .timeline-item {
+                justify-content: flex-start !important;
+                /* Force all to start */
+            }
+        }
+    </style>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* ================= NAVBAR ================= */
+        /* Navbar styles now handled by style.css */
+
+
+
+        /* ================= PAGE ================= */
+        .page-section {
+            min-height: 100vh;
+            padding: 120px 20px 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .page-section .container {
+            max-width: 900px;
+            width: 100%;
+        }
+
+        /* CENTERED TITLE */
+        .section-title {
+            font-size: 3.2rem;
+            margin-bottom: 50px;
+            text-align: center;
+            letter-spacing: 1px;
+            text-shadow: 0 0 20px var(--accent-glow);
+            /* Reset global positioning to fix centering */
+            position: static;
+            transform: none;
+            left: auto;
+            display: inline-block;
+        }
+
+        /* ================= CONTACT CONTENT ================= */
+        .contact-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-info {
+            max-width: 600px;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            font-size: 1.05rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .social-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-primary);
+            transition: all 0.3s;
+            background: var(--surface-color);
+        }
+
+        .social-icon:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
+            box-shadow: 0 0 18px var(--accent-glow);
+            transform: translateY(-4px);
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .info-item i {
+            color: var(--accent-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BACKGROUND ANIMATION -->
+    <div class="animated-bg"></div>
+
+    <!-- NAVBAR -->
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"> <span> </span></a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- CONTACT SECTION -->
+    <section class="page-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>
+                        If you’re looking to collaborate, hire, or simply connect and exchange ideas, feel free to reach
+                        out. I’d be happy to connect and explore how data can create impact together.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/aditya-purkar-nyc" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/AdityaPurkar14" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:adityapurkar20@gmail.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Navi Mumbai, Maharashtra, India</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>adityapurkar20@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aditya. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
